@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './RightBar.css'; // Import the CSS file
+import Cart from '../../addtocard/Cart';
+
 
 const products = Array.from({ length: 20 }, (_, index) => ({
   id: index,
@@ -14,6 +18,13 @@ const products = Array.from({ length: 20 }, (_, index) => ({
 }));
 
 const RightBar = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (product) => {
+    setCartItems([...cartItems, product]);
+    toast.success(`${product.name} added to cart!`);
+  };
+
   return (
     <div className="rightbar">
       <h2 className="rightbar-heading">Results</h2>
@@ -37,11 +48,13 @@ const RightBar = () => {
               <p className="product-bought-count">{product.boughtCount} bought in the past month</p>
               <h4 className="product-price">${product.price}</h4>
               <p className="product-delivery">Get it by Tomorrow, {product.deliveryDate}</p>
-              <button className="add-to-cart-button">Add to Cart</button>
+              <button className="add-to-cart-button" onClick={() => addToCart(product)}>Add to Cart</button>
             </div>
           </div>
         ))}
       </div>
+      <ToastContainer />
+      <Cart cartItems={cartItems} />
     </div>
   );
 };

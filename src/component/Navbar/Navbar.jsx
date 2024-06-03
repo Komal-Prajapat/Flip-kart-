@@ -61,7 +61,7 @@ const Navbarcom = () => {
         <Link to="/items">
           <button className="navbar-button">My Items</button>
         </Link>
-        <Link to="/Addtocard">
+        <Link to="/cart">
           <button className="navbar-button navbar-signup">Add to card</button>
         </Link>
         
