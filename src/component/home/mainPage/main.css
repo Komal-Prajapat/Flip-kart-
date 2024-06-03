@@ -1,0 +1,15 @@
+.home-container {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+  
+  .left-bar {
+    display: none;
+  }
+}

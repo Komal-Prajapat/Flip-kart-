@@ -1,0 +1,68 @@
+.leftside-filter {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 16px;
+  }
+  
+  .filter-section {
+    margin-bottom: 16px;
+  }
+  
+  .filter-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .filter-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .filter-checkbox input {
+    margin-right: 8px;
+  }
+  
+  .filter-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .filter-list li {
+    margin-bottom: 8px;
+  }
+  
+  .star-rating {
+    display: flex;
+  }
+  
+  .star {
+    color: gold;
+    margin-right: 4px;
+  }
+  
+  .price-range {
+    width: 100%;
+  }
+  
+  .see-more-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .see-more-button:hover {
+    text-decoration: underline;
+  }
+  
+  .see-more-button svg {
+    margin-left: 4px;
+  }
+  
