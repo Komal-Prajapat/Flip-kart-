@@ -1,0 +1,18 @@
+.topbar{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.topbar img{
+    height: 50px;
+}
+.data{
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 150px;
+    padding: 10px;
+}
+/* .headingpay{
+    border: 2px solid whitesmoke;
+    width: 100%;
+} */
