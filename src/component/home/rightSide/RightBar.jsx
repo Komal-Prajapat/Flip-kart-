@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './RightBar.css'; // Import the CSS file
+import './RightBar.css'; 
 import Cart from '../../addtocard/Cart';
 
 
-const products = Array.from({ length: 20 }, (_, index) => ({
+const products = Array.from({ length: 15 }, (_, index) => ({
   id: index,
   image: 'https://via.placeholder.com/150',
   name: `Product ${index + 1}`,

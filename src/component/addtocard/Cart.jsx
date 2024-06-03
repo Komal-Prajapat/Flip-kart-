@@ -6,7 +6,12 @@ const Cart = ({ cartItems = [] }) => {
     <div className="cart">
       <h2 className="cart-heading">Cart</h2>
       {cartItems.length === 0 ? (
-        <p className="cart-empty">Your cart is empty</p>
+      <>
+    <div className="container">
+   
+      <p className="cart-empty">Your cart is empty</p>
+    </div>
+      </>
       ) : (
         <div className="cart-items">
           {cartItems.map(item => (
@@ -19,7 +24,9 @@ const Cart = ({ cartItems = [] }) => {
             </div>
           ))}
         </div>
+
       )}
+      
     </div>
   );
 };
