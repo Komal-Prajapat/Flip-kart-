@@ -1,0 +1,48 @@
+.giftcard {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .giftcard h2 {
+    color: #ff9900; /* Highlight color */
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .giftcard p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .giftcard {
+      padding: 15px;
+    }
+  
+    .giftcard h2 {
+      font-size: 1.5em;
+    }
+  
+    .giftcard p {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .giftcard {
+      padding: 10px;
+    }
+  
+    .giftcard h2 {
+      font-size: 1.2em;
+    }
+  
+    .giftcard p {
+      font-size: 0.8em;
+    }
+  }
+  

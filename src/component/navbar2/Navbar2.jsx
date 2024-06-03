@@ -32,7 +32,7 @@ const Navbar2 = () => {
           <Link to={"/giftcard"}>
             <li>Gift Card</li>
           </Link>
-          <Link to={"/Amazon"}>
+          <Link to={"/pay"}>
             {" "}
             <li>Amazon Pay</li>
           </Link>

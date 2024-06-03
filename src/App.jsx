@@ -10,6 +10,8 @@ import SignOut from "./component/logout/SignOut";
 import FooterCom from "./component/footer/FooterCom";
 import Sidebarcom from "./component/sidebar/Sidebar";
 import Sell from "./SubComponent/sell/Sell";
+import GiftCard from "./SubComponent/GiftCards/GiftCard";
+import Pay from "./SubComponent/pay/Pay";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
           <Route path="/cart" element={<Cart></Cart>}></Route>
           <Route path="/signOut" element={<SignOut></SignOut>}></Route>
           <Route path="/sell" element={<Sell></Sell>}></Route>
+          <Route path="/giftcard" element={<GiftCard></GiftCard>}></Route>
+          <Route path="/pay" element={<Pay></Pay>}></Route>
         </Routes>
         <FooterCom></FooterCom>
       </Router>
