@@ -22,10 +22,9 @@ const Navbar2 = () => {
             {" "}
             <li>Profile</li>
           </Link>
-          <Link to={"/miniTv"}>
-            {" "}
-            <li>Amazon miniTv</li>
-          </Link>
+          
+          <a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">  <li>Amazon miniTv</li></a>
+          
           <Link to={"/sell"}>
             {" "}
             <li>Sell</li>

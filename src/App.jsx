@@ -9,6 +9,7 @@ import Cart from "./component/addtocard/Cart";
 import SignOut from "./component/logout/SignOut";
 import FooterCom from "./component/footer/FooterCom";
 import Sidebarcom from "./component/sidebar/Sidebar";
+import Sell from "./SubComponent/sell/Sell";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/cart" element={<Cart></Cart>}></Route>
           <Route path="/signOut" element={<SignOut></SignOut>}></Route>
+          <Route path="/sell" element={<Sell></Sell>}></Route>
         </Routes>
         <FooterCom></FooterCom>
       </Router>
