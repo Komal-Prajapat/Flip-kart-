@@ -55,14 +55,14 @@ const FooterCom = () => {
         </div>
         <hr />
         <div className="row row2">
-          <div className="image">
-            <img
+          <div className="image col">
+           <img
               src="https://tse1.mm.bing.net/th?id=OIP.JZQkrLG78s4A3yoPPuOmbQHaCa&pid=Api&P=0&h=180"
               alt="Amazon Logo"
               className="navbar-logo"
             />
           </div>
-          <div className="language-selector">
+          <div className="language-selector col">
             <button onClick={toggleDropdown} className="language-button">
               <FontAwesomeIcon icon={faGlobe} className="icon" /> Language
             </button>
@@ -81,6 +81,77 @@ const FooterCom = () => {
               </ul>
             )}
           </div>
+        </div>
+      </div>
+
+      <div className="black">
+        <div className="row row3">
+          <div className="col">
+            <li className="p" style={{ color: "white", fontSize: "10px" }}>
+              AbeBooks
+            </li>
+            <li>Books, art</li>
+            <li>& collectible</li>
+          </div>
+          <div className="col">
+            <li className="p" style={{ color: "white", fontSize: "10px" }}>
+              Amazon Web Services
+            </li>
+            <li>Scalable Cloud</li>
+            <li>computing service</li>
+          </div>
+          <div className="col">
+            <li className="p" style={{ color: "white", fontSize: "10px" }}>
+              Audible
+            </li>
+            <li>Download</li>
+            <li>Audio Books</li>
+          </div>
+          <div className="col">
+            <li className="p" style={{ color: "white", fontSize: "10px" }}>
+              IMDb
+            </li>
+            <li>Movies, TV</li>
+            <li>& Celebrities</li>
+          </div>
+        </div>
+
+        <div className="row row4">
+          <div className="col">
+            <li className="p" style={{ color: "white", fontSize: "10px" }}>
+              AbeBooks
+            </li>
+            <li>Books, art</li>
+            <li>& collectible</li>
+          </div>
+          <div className="col">
+            <li className="p" style={{ color: "white", fontSize: "10px" }}>
+              Amazon Web Services
+            </li>
+            <li>Scalable Cloud</li>
+            <li>computing service</li>
+          </div>
+          <div className="col">
+            <li className="p" style={{ color: "white", fontSize: "10px" }}>
+              Audible
+            </li>
+            <li>Download</li>
+            <li>Audio Books</li>
+          </div>
+          <div className="col">
+            <li className="p" style={{ color: "white", fontSize: "10px" }}>
+              IMDb
+            </li>
+            <li>Movies, TV</li>
+            <li>& Celebrities</li>
+          </div>
+        </div>
+        <div className="copy">
+          <p>
+            Conditions of Use &amp; Sale&nbsp;&nbsp;Privacy
+            Notice&nbsp;&nbsp;Interest-Based Ads
+          </p>
+          <p>komalprajapat267@gmail.com&nbsp;&nbsp;&copy; 2024</p>
         </div>
       </div>
     </>

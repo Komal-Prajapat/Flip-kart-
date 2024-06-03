@@ -8,7 +8,7 @@ import Cart from '../../addtocard/Cart';
 
 const products = Array.from({ length: 15 }, (_, index) => ({
   id: index,
-  image: 'https://via.placeholder.com/150',
+  image: 'https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1708673189/Croma%20Assets/Communication/Mobiles/Images/300652_0_ncocr2.png?tr=w-360',
   name: `Product ${index + 1}`,
   rating: 4.5,
   reviews: Math.floor(Math.random() * 1000),

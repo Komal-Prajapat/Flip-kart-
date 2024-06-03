@@ -1,13 +1,18 @@
 .footer {
     background: #091028;
     color: white;
-    height: cover;
     padding: 50px;
     list-style: none;
   }
-  
+  .row li{
+    font-size: x-small;
+  }
+  .row p{
+    font-size: medium;
+  }
   .row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   
@@ -34,7 +39,6 @@
     border-radius: 5px;
     padding: 10px;
     color: black;
-    /* background: none; */
     border: none;
     font-size: 16px;
     cursor: pointer;
@@ -44,10 +48,6 @@
   
   .language-button .fa-globe {
     margin-right: 5px;
-  }
-  
-  .icon {
-    
   }
   
   .language-dropdown {
@@ -71,19 +71,74 @@
     background-color: #f3f3f3;
   }
   
-  .row2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
   .image {
     display: flex;
-
     align-items: center;
   }
   
   .navbar-logo {
     height: 50px;
+  }
+  
+  .black {
+    background: #000;
+    color: white;
+    padding: 30px 20px;
+  }
+  
+  .black li, .black p {
+    font-size: xx-small;
+  }
+  
+  li{
+    list-style: none;
+  }
+  .black li {
+    color: #ccc;
+  }
+  
+  .copy {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .language-selector {
+      margin-top: 20px;
+    }
+  
+    .row2 {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .row3, .row4 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 20px;
+    }
+  
+    .language-button {
+      font-size: 14px;
+    }
+  
+    .navbar-logo {
+      height: 40px;
+    }
+  
+    .black li, .black p {
+      font-size: x-small;
+    }
   }
   
