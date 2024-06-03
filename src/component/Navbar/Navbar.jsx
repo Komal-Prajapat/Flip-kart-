@@ -1,45 +1,48 @@
-import React from 'react';
-import { FaSearch } from 'react-icons/fa';
-import { IoLanguage } from 'react-icons/io5';
+import React, { useState } from 'react';
+import { FaSearch, FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { CiLocationOn } from "react-icons/ci";
 import './navbar.css';
 
 const Navbarcom = () => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-section">
         <Link to={"/"}>
           <img
-            src="http://g-ec2.images-amazon.com/images/G/31/img14/anywhere/amazon-logo-500500._V327001990_.jpg"
+            src="https://tse1.mm.bing.net/th?id=OIP.JZQkrLG78s4A3yoPPuOmbQHaCa&pid=Api&P=0&h=180"
             alt="Amazon Logo"
             className="navbar-logo"
           />
         </Link>
-        <div className="navbar-user-info">
-          <p className="navbar-user-name">Hello, User</p>
-          <p className="navbar-user-address">Your Address</p>
-        </div>
-      </div>
-      <div className="navbar-search" style={{width:'150px' , marginRight:'10px'}}>
-        <input
-          type="text"
-          className="navbar-search-input"
-          placeholder="Search..."
-        />
-        <button className="navbar-search-button" >
-          <FaSearch />
+        <button className="navbar-toggle" onClick={handleToggle}>
+          <FaBars />
         </button>
       </div>
-      <div className="navbar-section" >
-        {/* <div className="navbar-language">
-          <IoLanguage className="navbar-language-icon" style={{marginLeft:'20px'}}/>
-          <select className="navbar-language-select" style={{marginLeft:"20px"}}>
-            <option>EN</option>
-            <option>ES</option>
-            <option>FR</option>
-            <option>DE</option>
-          </select>
-        </div> */}
+      <div className={`navbar-links ${isNavExpanded ? "expanded" : ""}`}>
+        <div className="navbar-user-info">
+          <p className="navbar-user-name">Deliver to User</p>
+      <div className="location">
+      <CiLocationOn  className='location_icon'/>
+          <p className="navbar-user-address">Your Address</p>
+      </div>
+        </div>
+        <div className="navbar-search">
+          <input
+            type="text"
+            className="navbar-search-input"
+            placeholder="Search..."
+          />
+          <button className="navbar-search-button">
+            <FaSearch />
+          </button>
+        </div>
         <div className="navbar-user-dropdown">
           <p className="navbar-user-name">Hello, User</p>
           <div className="navbar-dropdown">
@@ -58,12 +61,17 @@ const Navbarcom = () => {
         <Link to="/items">
           <button className="navbar-button">My Items</button>
         </Link>
+        <Link to="/Addtocard">
+          <button className="navbar-button navbar-signup">Add to card</button>
+        </Link>
+        
         <Link to="/register">
+
           <button className="navbar-button navbar-signin">Sign In</button>
         </Link>
         <Link to="/login">
           <button className="navbar-button navbar-signup">Sign Up</button>
-        </Link>
+        </Link> 
       </div>
     </nav>
   );
