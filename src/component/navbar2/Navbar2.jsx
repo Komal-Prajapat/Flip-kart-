@@ -1,6 +1,9 @@
 import React, { Profiler, useState } from "react";
 import "./navbar2.css";
 import { Link } from "react-router-dom";
+import { FiAlignJustify } from "react-icons/fi";
+import { CgProfile } from "react-icons/cg";
+
 
 const Navbar2 = () => {
   const [isActive, setIsActive] = useState(false);
@@ -20,7 +23,8 @@ const Navbar2 = () => {
         <ul className={isActive ? "active" : ""}>
         <Link to={"/profile"}>
             {" "}
-            <li>Profile</li>
+            <CgProfile className="menubtn" />
+          
           </Link>
           
           <a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">  <li>Amazon miniTv</li></a>

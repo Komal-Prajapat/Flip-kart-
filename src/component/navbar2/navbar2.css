@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
   
   .navbar2 ul {
@@ -35,7 +36,12 @@
     height: 24px;
     cursor: pointer;
   }
-  
+  .menubtn{
+    color: white;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
   .toggle-button div {
     width: 30px;
     height: 3px;
