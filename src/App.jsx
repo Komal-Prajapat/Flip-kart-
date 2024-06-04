@@ -12,6 +12,10 @@ import Sidebarcom from "./component/sidebar/Sidebar";
 import Sell from "./SubComponent/sell/Sell";
 import GiftCard from "./SubComponent/GiftCards/GiftCard";
 import Pay from "./SubComponent/pay/Pay";
+import Coupons from "./SubComponent/Coupons/Coupons";
+import GiftIdeas from "./SubComponent/GiftIdeas/GiftIdeas";
+import ProductList from "./SubComponent/buyAgain/BuyAgain";
+import Books from "./SubComponent/books/Books";
 
 const App = () => {
   return (
@@ -28,6 +32,10 @@ const App = () => {
           <Route path="/sell" element={<Sell></Sell>}></Route>
           <Route path="/giftcard" element={<GiftCard></GiftCard>}></Route>
           <Route path="/pay" element={<Pay></Pay>}></Route>
+          <Route path="/coupons" element={<Coupons></Coupons>}></Route>
+          <Route path="/giftideas" element={<GiftIdeas></GiftIdeas>}></Route>
+          <Route path="/buyAgain" element={<ProductList></ProductList>}></Route>
+          <Route path="/books" element={<Books></Books>}></Route>
         </Routes>
         <FooterCom></FooterCom>
       </Router>

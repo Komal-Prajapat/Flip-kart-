@@ -1,0 +1,51 @@
+.gift-ideas {
+    text-align: center;
+  }
+  
+  .gift-ideas h2 {
+    margin-bottom: 20px;
+  }
+  
+  .gift-ideas .gift-images-wrapper {
+    overflow-x: auto;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 10px; 
+  }
+  
+  .gift-ideas .gift-images {
+    display: flex;
+    white-space: nowrap;
+  }
+  
+  .gift-ideas .gift-image {
+    flex: 0 0 auto;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .gift-ideas .gift-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .gift-ideas .gift-image p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .gift-ideas .button-group {
+    margin-bottom: 20px;
+  }
+  
+  .gift-ideas .button-group button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

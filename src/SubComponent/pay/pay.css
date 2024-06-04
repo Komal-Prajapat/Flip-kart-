@@ -36,6 +36,7 @@
 .rightside {
     flex-grow: 1;
     margin-left: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .row {
@@ -43,7 +44,6 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
 }
 .row p{

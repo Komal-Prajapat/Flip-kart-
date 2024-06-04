@@ -31,35 +31,35 @@ const Navbar2 = () => {
           
           <Link to={"/sell"}>
             {" "}
-            <li>Sell</li>
+            <li>Browse Products</li>
           </Link>
           <Link to={"/giftcard"}>
-            <li>Gift Card</li>
+            <li>Gift Cards & More</li>
           </Link>
           <Link to={"/pay"}>
             {" "}
-            <li>Amazon Pay</li>
+            <li>Amazon Pay Accepted Here</li>
           </Link>
           <Link to={"/buyAgain"}>
             {" "}
-            <li>Buy Again</li>
+            <li>Reorder with Ease</li>
           </Link>
           <Link to={"/coupons"}>
             {" "}
-            <li>Coupons</li>
+            <li>Unlock Savings Now</li>
           </Link>
-          <Link to={"/health"}>
+          {/* <Link to={"/health"}>
             {" "}
             <li>Health, Household & Personal Care</li>
-          </Link>
+          </Link> */}
           <Link to={"/giftideas"}>
             {" "}
             <li>Gift Ideas</li>
           </Link>
-          <Link to={"/books"}>
+          {/* <Link to={"/books"}>
             {" "}
-            <li>Books</li>
-          </Link>
+            <li>Book Nook</li>
+          </Link> */}
         </ul>
       </div>
     </>
